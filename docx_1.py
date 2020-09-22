@@ -604,10 +604,8 @@ for row in table3.rows:
                 font.size= Pt(12)
 para3=get_paragraph(document.paragraphs,'222')
 move_table_after(table3, para3)
-document.save('/Users/wangwang/PycharmProjects/docx_learning/'+str(dict['车辆型号：'])+'报告'+'.docx')
+document.save(str(dict['车辆型号：'])+'报告'+'.docx')
 print(os.getcwd())
-
-
 
 wb=openpyxl.load_workbook(os.getcwd()+'/pathtest.xlsx')
 sheet=wb.get_sheet_by_name('参数')
